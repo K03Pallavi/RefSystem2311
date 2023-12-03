@@ -76,5 +76,32 @@
             @yield('content')
         </main>
     </div>
+
+
+    <div class="">
+        <h1 class="text-center text-info">Add reference</h1>
+        </div>
+    
+        <form class="container-sm" method="POST" action="{{url('/')}}/refer">
+    @csrf
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input name="refname" type="text" class="form-control" id="name">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email </label>
+              <input name="refemail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Contact</label>
+                <input name="refcontact" type="" class="form-control" id="" >
+              </div>
+      
+         <a href="">
+            <button type="submit" class="btn btn-primary">Add</button>
+         </a>
+          </form>
+
+
 </body>
 </html>
